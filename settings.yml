@@ -1,0 +1,5 @@
+groups:
+  default: ""
+  type: list
+  list_type: simple
+  description: "Enter one or more group names (case-sensitive). The flag button will be suppressed on all posts from users with one of these groups set as their primary group."
