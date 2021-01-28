@@ -10,7 +10,7 @@ export default apiInitializer("0.8", (api) => {
         rawPostMenu[0].children[0].children
       ) {
         rawPostMenu[0].children[0].children = rawPostMenu[0].children[0].children.filter(
-          (button) => button.attrs && button.attrs.id !== "flag"
+          (button) => button.children || (button.attrs && button.attrs.id !== "flag")
         );
       }
       return rawPostMenu;
